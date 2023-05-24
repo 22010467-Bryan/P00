@@ -20,6 +20,19 @@ public class CalculatorTest {
 	public void setUp() throws Exception {
 	}
 
+	
+	@Test
+	public final void testSubtract() {
+		int a = 9876;
+		int b = 4321;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.subtract(a, b);
+		
+		int expected = 5555;
+		assertEquals(actual, expected);
+	}
+	
 	@After
 	public void tearDown() throws Exception {
 	}
